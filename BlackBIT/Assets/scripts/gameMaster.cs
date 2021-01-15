@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+public class gameMaster : MonoBehaviour
+{
+	public int points;
+	public Text pointsText;
+	public Text InputText;
+    
+    void Update()
+    {
+    	pointsText.text= ("Bits:" + points +"/10");
+
+       
+    }
+}
