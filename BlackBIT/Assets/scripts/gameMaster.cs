@@ -7,10 +7,26 @@ public class gameMaster : MonoBehaviour
 	public int points;
 	public Text pointsText;
 	public Text InputText;
+
+	void Start()
+	{
+		if(PlayerPrefs.HasKey("Points"))
+		{
+			if (Application.loadedLevel == 0)
+			{
+				PlayerPrefs.DeleteKey("Points");
+				points = 0;
+			}
+			else
+			{
+				points = PlayerPrefs.GetInt("Points");
+			}
+		}
+	}
     
     void Update()
     {
-    	pointsText.text= ("Bits:" + points +"/10");
+    	pointsText.text= ("Bits:" + points);
 
        
     }

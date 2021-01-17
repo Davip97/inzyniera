@@ -15,8 +15,6 @@ public int curHealth;
 public int maxHealth = 5;
 
 public gameMaster gm;
-public GameObject Win;
-private bool won= false;
 
 public bool canDoubleJump;
 public AudioSource[] sounds;
@@ -36,6 +34,7 @@ public AudioSource dmgsnd;
         coinsnd = sounds[0];
         jumpsnd= sounds[1];
         dmgsnd= sounds[2];
+      
 
         gm=GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
 
@@ -45,6 +44,7 @@ public AudioSource dmgsnd;
     // Update is called once per frame
     void Update()
     {
+
 
         anim.SetBool("Ground",ground);
         anim.SetFloat("Speed",Mathf.Abs(rb2d.velocity.x));
@@ -89,11 +89,7 @@ public AudioSource dmgsnd;
         {
             Die(); //depresyjne troche :(
         }
-        if(won)
-        {
-            Win.SetActive(true);
-            Time.timeScale=0;
-        }
+ 
 
 
         
@@ -163,7 +159,9 @@ public AudioSource dmgsnd;
 
 
         }
-
-    
+        
+     
     }
+
+
 }

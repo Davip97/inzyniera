@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - GameMaster
+  - End
   layers:
   - Default
   - TransparentFX

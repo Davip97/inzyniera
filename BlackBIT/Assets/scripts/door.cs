@@ -18,6 +18,7 @@ public class door : MonoBehaviour
 	{
 		if(col.CompareTag("Player"))
 		{
+			SaveScore();
 			gm.InputText.text= (" [E] TO ENTER");
 		}
 
@@ -26,6 +27,7 @@ public class door : MonoBehaviour
 	{
 		if(Input.GetKeyDown("e"))
 		{
+			SaveScore();
 			Application.LoadLevel(levelToLoad);
 		}
 		
@@ -37,6 +39,10 @@ public class door : MonoBehaviour
 		gm.InputText.text= (" ");
 	}
 		
+	}
+	void SaveScore()
+	{
+		PlayerPrefs.SetInt("Points",gm.points);
 	}
    
     
