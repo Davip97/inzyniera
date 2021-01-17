@@ -12,7 +12,7 @@ public class gameMaster : MonoBehaviour
 	{
 		if(PlayerPrefs.HasKey("Points"))
 		{
-			if (Application.loadedLevel == 0)
+			if (Application.loadedLevel == 1)
 			{
 				PlayerPrefs.DeleteKey("Points");
 				points = 0;

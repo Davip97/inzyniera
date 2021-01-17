@@ -13,7 +13,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -351,7 +350,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14348}
     - Class: 114
-      Script: {instanceID: 17980}
+      Script: {instanceID: 18880}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
